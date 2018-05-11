@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-widhth, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+		title='Home Page'
+		link(rel="icon" href="/file/favicon.ico" type="image/x-icon")
+		link(rel="shortcut icon" href="/file/favicon.ico" type="image/x-icon")
+		link(rel="shortcut icon" href="/file/favicon.png" type="image/png")
+		style
+			include login-style.css
+	body
+		div#back
+		div#blrBack
+			div#blured
+		form#main(action="/" method="post" autocomplete="off")
+			input#user(type="text" name="user" class="center" placeholder="اسم المستخدم")
+			br
+			input#user(type="password" name="pass" class="center" placeholder="كلمة المرور" autocomplete="new-password")
+			br
+			input#sub(type="submit" class="center" value="دخول")
+			div.center
+				p#msg
+				=msg
